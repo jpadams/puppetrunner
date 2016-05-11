@@ -1,21 +1,13 @@
 metadata :name        => 'puppetrunner',
-         :description => 'Runs puppet apply on a Base64 encoded manifest',
+         :description => 'Runs puppet agent with detailed exit codes',
          :author      => 'jeremy@puppetlabs.com',
          :license     => 'Apache v2 - No warranty',
          :version     => '1.0',
-         :url         => 'http://www.puppetlabs.com',
+         :url         => 'http://www.puppet.com',
          :timeout     => 45
 
-action "run", :description => 'Runs puppet apply on a Base64 encoded manifest' do
+action "run", :description => 'Runs puppet agent with detailed exit codes' do
   display :always
-
-   input :manifest,
-         :prompt      => "manifest",
-         :description => "base64 of a puppet manifest",
-         :type        => :string,
-         :validation  => :shellsafe,
-         :optional    => false,
-         :maxlength   => 900
 
   output :status,
          :description => "The exit code of the script",
