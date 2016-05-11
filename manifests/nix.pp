@@ -1,6 +1,6 @@
 class puppetrunner::nix {
 
-  file { '/opt/puppet/libexec/mcollective/mcollective/agent/puppetrunner.rb':
+  file { '/opt/puppetlabs/mcollective/plugins/mcollective/agent/puppetrunner.rb':
     ensure => file,
     owner  => 'root',
     group  => 'root',
@@ -9,7 +9,7 @@ class puppetrunner::nix {
     notify => Service['mcollective']
   }
 
-  file { '/opt/puppet/libexec/mcollective/mcollective/agent/puppetrunner.ddl':
+  file { '/opt/puppetlabs/mcollective/plugins/mcollective/agent/puppetrunner.ddl':
     ensure => file,
     owner  => 'root',
     group  => 'root',

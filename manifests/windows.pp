@@ -1,6 +1,6 @@
 class puppetrunner::windows {
 
-  file { 'C:/ProgramData/PuppetLabs/mcollective/etc/plugins/mcollective/agent/puppetrunner.rb':
+  file { 'C:\ProgramData\PuppetLabs\mcollective\plugins\mcollective\agent\puppetrunner.rb':
     ensure => file,
     source => 'puppet:///modules/puppetrunner/puppetrunner_windows.rb',
     owner  => Administrator,
@@ -9,7 +9,7 @@ class puppetrunner::windows {
     notify => Service['mcollective']
   }
 
-  file { 'C:/ProgramData/PuppetLabs/mcollective/etc/plugins/mcollective/agent/puppetrunner.ddl':
+  file { 'C:\ProgramData\PuppetLabs\mcollective\plugins\mcollective\agent\puppetrunner.ddl':
     ensure => file,
     source => 'puppet:///modules/puppetrunner/puppetrunner.ddl',
     owner  => Administrator,
