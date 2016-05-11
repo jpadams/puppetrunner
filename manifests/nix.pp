@@ -6,7 +6,7 @@ class puppetrunner::nix {
     group  => 'root',
     mode   => '0644',
     source => 'puppet:///modules/puppetrunner/puppetrunner_nix.rb',
-    notify => Service['pe-mcollective']
+    notify => Service['mcollective']
   }
 
   file { '/opt/puppet/libexec/mcollective/mcollective/agent/puppetrunner.ddl':
@@ -15,7 +15,7 @@ class puppetrunner::nix {
     group  => 'root',
     mode   => '0644',
     source => 'puppet:///modules/puppetrunner/puppetrunner.ddl',
-    notify => Service['pe-mcollective']
+    notify => Service['mcollective']
   }
 
 }

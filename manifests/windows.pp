@@ -6,7 +6,7 @@ class puppetrunner::windows {
     owner  => Administrator,
     group  => Administrators,
     mode   => '0644',
-    notify => Service['pe-mcollective']
+    notify => Service['mcollective']
   }
 
   file { 'C:/ProgramData/PuppetLabs/mcollective/etc/plugins/mcollective/agent/puppetrunner.ddl':
@@ -15,7 +15,7 @@ class puppetrunner::windows {
     owner  => Administrator,
     group  => Administrators,
     mode   => '0644',
-    notify => Service['pe-mcollective']
+    notify => Service['mcollective']
   }
 
 }
