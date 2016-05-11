@@ -3,7 +3,7 @@ class puppetrunner::windows {
   file { 'C:\ProgramData\PuppetLabs\mcollective\plugins\mcollective\agent\puppetrunner.rb':
     ensure => file,
     source => 'puppet:///modules/puppetrunner/puppetrunner_windows.rb',
-    owner  => Administrator,
+    #owner  => Administrator,
     group  => Administrators,
     mode   => '0644',
     notify => Service['mcollective']
@@ -12,7 +12,7 @@ class puppetrunner::windows {
   file { 'C:\ProgramData\PuppetLabs\mcollective\plugins\mcollective\agent\puppetrunner.ddl':
     ensure => file,
     source => 'puppet:///modules/puppetrunner/puppetrunner.ddl',
-    owner  => Administrator,
+    #owner  => Administrator,
     group  => Administrators,
     mode   => '0644',
     notify => Service['mcollective']
