@@ -4,7 +4,7 @@ class puppetrunner::windows {
     ensure => file,
     source => 'puppet:///modules/puppetrunner/puppetrunner_windows.rb',
     #owner  => Administrator,
-    group  => Administrators,
+    #group  => Administrators,
     mode   => '0644',
     notify => Service['mcollective']
   }
@@ -13,7 +13,7 @@ class puppetrunner::windows {
     ensure => file,
     source => 'puppet:///modules/puppetrunner/puppetrunner.ddl',
     #owner  => Administrator,
-    group  => Administrators,
+    #group  => Administrators,
     mode   => '0644',
     notify => Service['mcollective']
   }
