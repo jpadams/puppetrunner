@@ -2,6 +2,7 @@ puppetrunner
 =======
 
 Allow you to run puppet agent -t on remote machines with --detailed-exitcodes
+https://docs.puppet.com/puppet/latest/reference/man/agent.html#OPTIONS
 
 Here's are some examples of a script, let's call it `run.sh`, that could drive this:
 
