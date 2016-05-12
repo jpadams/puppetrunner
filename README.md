@@ -1,7 +1,8 @@
 puppetrunner
 =======
+Updated for PE 2015 and beyond. Works on *nix and Windows. To use, add this module to your Puppetfile and then classify the master and all agents that you want to control with the `puppetrunner` class.
 
-Allow you to run puppet agent -t on remote machines with --detailed-exitcodes
+MCO plugin that allows you to run puppet agent -t on remote machines with --detailed-exitcodes
 https://docs.puppet.com/puppet/latest/reference/man/agent.html#OPTIONS
 
 Here's are some examples of a script, let's call it `run.sh`, that could drive this:
