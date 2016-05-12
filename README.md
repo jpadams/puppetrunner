@@ -3,7 +3,9 @@ puppetrunner
 
 Allow you to run puppet agent -t on remote machines with --detailed-exitcodes
 
-Here's an example of a script that could drive this:
+Here's an example of a script, let's call it `run.sh`, that could drive this:
+
+invocation: `run.sh server2012r2a.pdx.puppet.vm`
 
 ```
 #!/bin/bash
