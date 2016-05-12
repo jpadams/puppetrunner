@@ -4,7 +4,7 @@ metadata :name        => 'puppetrunner',
          :license     => 'Apache v2 - No warranty',
          :version     => '1.0',
          :url         => 'http://www.puppet.com',
-         :timeout     => 45
+         :timeout     => 120
 
 action "run", :description => 'Runs puppet agent with detailed exit codes' do
   display :always
