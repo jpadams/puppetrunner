@@ -6,12 +6,7 @@ module MCollective
       end
 
       action "run" do
-        case Facts["hardwaremodel"]
-        when "x64"
-          puppet = 'C:/Progra~2/Puppet~1/Puppet~1/bin/puppet.bat'
-        else # 32bit
-          puppet = 'C:/Progra~1/Puppet~1/Puppet~1/bin/puppet.bat'
-        end
+        puppet = 'C:\Progra~1\Puppet~1\puppet\bin\puppet.bat'
         command = "cmd /c \"#{puppet} agent -t --detailed-exitcodes\""
         reply[:status] = run(command,:stdout => :out, :stderr => :err, :chomp => true)
       end
